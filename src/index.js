@@ -15,6 +15,7 @@ import './index.css';
 
 import {
   BrowserRouter as Router,
+  Redirect,
   Route,
   NavLink
 } from 'react-router-dom'
@@ -65,7 +66,9 @@ const App = () => (
     <div className="wrapper">
       <Navigator />
       <main>
-        <IndexRoute component={Ecosystem} />
+        <Route exact path="/" render={() => (
+          <Redirect to="/ecosystem"/>
+        )}/>
         <Route path="/ecosystem" component={Ecosystem}/>
         <Route path="/company" component={OverviewCompany}/>
         <Route path="/roadmap" component={Roadmap}/>
