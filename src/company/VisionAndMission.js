@@ -1,6 +1,4 @@
 import React from 'react';
-import { DefaultPlayer as Video } from 'react-html5video';
-import '../../node_modules/react-html5video/dist/styles.css';
 
 module.exports = () => (
   <div className="container">
