@@ -1,5 +1,5 @@
 import React from 'react';
-import './Overview_of_the_goods.css';
+import './Products.css';
 
 import Supply from './Supply';
 import Usage from './Usage';

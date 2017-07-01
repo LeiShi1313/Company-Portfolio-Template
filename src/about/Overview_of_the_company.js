@@ -1,7 +1,6 @@
 import React from 'react';
 import './Overview_of_the_company.css';
 
-import VisionAndMission from './VisionAndMission';
 import About from './About';
 import CoreMember from './CoreMembers';
 import Advisors from './Advisors';
@@ -9,9 +8,6 @@ import Partners from './Partners';
 
 const OverviewCompany = () => (
   <div className="main-page overview_company">
-    <section>
-      <VisionAndMission/>
-    </section>
     <section className="about">
       <About/>
     </section>
