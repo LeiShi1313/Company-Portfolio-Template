@@ -65,6 +65,7 @@ const App = () => (
     <div className="wrapper">
       <Navigator />
       <main>
+        <IndexRoute component={Ecosystem} />
         <Route path="/ecosystem" component={Ecosystem}/>
         <Route path="/company" component={OverviewCompany}/>
         <Route path="/roadmap" component={Roadmap}/>
