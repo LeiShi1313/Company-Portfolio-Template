@@ -1,6 +1,6 @@
 import React from 'react';
 
-module.exports = () => (
+export default () => (
   <div className="container">
     <h2><strong>- About us -</strong></h2>
     <div className="row">

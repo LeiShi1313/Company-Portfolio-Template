@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-module.exports = () => (
+export default () => (
   <div className="container">
     <h3>Core Member</h3>
     <div className="row">

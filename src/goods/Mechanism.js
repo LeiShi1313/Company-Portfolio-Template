@@ -1,5 +1,6 @@
 import React from 'react';
-module.exports = () => (
+
+export default () => (
 
   <div className="container">
     <h2>Mechanism</h2>

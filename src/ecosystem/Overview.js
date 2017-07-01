@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EcosystemOverview = () => (
+export default () => (
   <div className="container">
     <h2>Ecosystem</h2>
 
@@ -24,5 +24,4 @@ const EcosystemOverview = () => (
   </div>
 );
 
-module.exports = EcosystemOverview;
 

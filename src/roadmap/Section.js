@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-module.exports = () => (
+export default () => (
 
   <div className="container">
     <img src={require('./roadmap.png')} alt="" />
