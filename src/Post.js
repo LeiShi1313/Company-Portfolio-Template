@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Post = () => (
-  <div className="post">
+  <div className="main-page post">
     <section>
       <div className="container">
       <h3>Post</h3>

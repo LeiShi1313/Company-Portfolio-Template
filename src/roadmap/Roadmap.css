@@ -1,0 +1,8 @@
+
+.roadmap > section img {
+  width: 100%;
+}
+
+.roadmap.main-page > section {
+  background-color: white;
+}

@@ -1,0 +1,25 @@
+.ecosystem > section.overview {
+  background-color: #1C4257;
+  /*background: 'ecosystem_background.png';*/
+}
+
+.ecosystem > section.overview > div {
+  color: white;
+}
+.ecosystem > section.overview > div > p {
+  font-family: "Arial Black", arial-black;
+  font-size: 16px;
+}
+
+.ecosystem > section.overview > div > h3 {
+}
+
+.ecosystem > section.painpoint > div > h2 {
+  font-family: 'Karla', 'Helvetica', sans-serif;
+  color: #e80000;
+}
+
+.ecosystem > section.painpoint > div > p {
+  font-style: italic;
+  font-size: 16px;
+}

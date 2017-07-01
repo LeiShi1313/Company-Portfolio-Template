@@ -1,0 +1,33 @@
+.overview_company > section {
+  background-color: #eaeaea;
+}
+
+.overview_company > section.about > div {
+  font-family: "Arial", arial;
+}
+
+.overview_company > section.people > div > h3 {
+  color: #ff5500;
+}
+
+.people img {
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+}
+.people p {
+  text-align: left;
+  margin: 10px 0 0 50px;
+  font-family: "Arial", arial;
+  font-size: 16px;
+}
+.people h4 {
+  text-align: left;
+  margin: 10px 0 0 50px;
+}
+
+.partners img {
+  width: 120px;
+  height: 120px;
+}

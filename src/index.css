@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   font-size: 16px;
+  font-family: "Arial Black", arial-black;
 }
 
 html, body, #root, .wrapper {
@@ -18,16 +18,18 @@ html, body, #root, .wrapper {
   max-width: 960px;
   margin: 0 auto;
   display: block;
+
 }
 
 
 #navigator {
   display: block;
   position: fixed;
+  z-index: 9999;
   margin: 0;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #444444;
   height: 64px;
   transition: height ease-in-out 300ms,
               background-color ease-in-out 300ms;
@@ -55,7 +57,7 @@ html, body, #root, .wrapper {
 }
 
 #navigator a {
-  color: black;
+  color: white;
   transition: color ease-in-out 300ms;
   text-decoration: none;
   padding: 0.5rem;
@@ -103,4 +105,18 @@ footer.footer {
 
 .about > section {
   padding: 4rem 1rem 1rem 1rem;
+}
+
+.main-page > section:first-child {
+  margin-top: 50px;
+}
+
+
+.main-page > section {
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: #eaeaea;
+}
+
+.main-page > section > div.container {
+  margin: 12px auto;
 }
