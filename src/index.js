@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Main routers
-import Index from './index/Index';
+import Overview from './overview/Overview';
 import Ecosystem from './ecosystem/Ecosystem';
-import OverviewCompany from './about/Overview_of_the_company';
+import About from './about/About';
 import Products from './products/Products';
 import Plan from './plan/Plan';
+import Contact from './contact/Contact.js';
 
 // Footer
 import FooterContent from './footer/FooterContent';
@@ -15,6 +16,7 @@ import './index.css';
 
 import {
   BrowserRouter as Router,
+  Redirect,
   Route,
   NavLink
 } from 'react-router-dom'
@@ -41,11 +43,12 @@ class Navigator extends React.Component {
     return (
       <nav id="navigator" className={this.state.style || 'normal'}>
         <ul className="container">
-          <li><NavLink to="/" activeStyle={{ color: 'orangered' }}>Index</NavLink></li>
+          <li><NavLink to="/overview" activeStyle={{ color: 'orangered' }}>Overview</NavLink></li>
           <li><NavLink to="/ecosystem" activeStyle={{ color: 'orangered' }}>Ecosystem</NavLink></li>
           <li><NavLink to="/products" activeStyle={{ color: 'orangered' }}>Products</NavLink></li>
           <li><NavLink to="/plan" activeStyle={{ color: 'orangered' }}>Plan</NavLink></li>
           <li><NavLink to="/about" activeStyle={{ color: 'orangered' }}>About us</NavLink></li>
+          <li><NavLink to="/contact" activeStyle={{ color: 'orangered' }}>Contact</NavLink></li>
         </ul>
       </nav>
     )
@@ -65,11 +68,15 @@ const App = () => (
     <div className="wrapper">
       <Navigator />
       <main>
-        <Route exact path="/" component={Index}/>
-        <Route path="/ecosystem" component={Ecosystem}/>
-        <Route path="/products" component={Products}/>
-        <Route path="/plan" component={Plan}/>
-        <Route path="/about" component={OverviewCompany}/>
+        <Route exact path="/" render={() => (
+          <Redirect to="/overview"/>
+        )}/>
+        <Route exact path="/overview" component={Overview}/>
+        <Route exact path="/ecosystem" component={Ecosystem}/>
+        <Route exact path="/products" component={Products}/>
+        <Route exact path="/plan" component={Plan}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/contact" component={Contact}/>
       </main>
       <Footer />
     </div>
