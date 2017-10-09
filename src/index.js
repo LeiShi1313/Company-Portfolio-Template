@@ -7,7 +7,6 @@ import Ecosystem from './ecosystem/Ecosystem';
 import About from './about/About';
 import Products from './products/Products';
 import Plan from './plan/Plan';
-import Contact from './contact/Contact.js';
 
 // Footer
 import FooterContent from './footer/FooterContent';
@@ -48,7 +47,6 @@ class Navigator extends React.Component {
           <li><NavLink to="/products" activeStyle={{ color: 'orangered' }}>Products</NavLink></li>
           <li><NavLink to="/plan" activeStyle={{ color: 'orangered' }}>Plan</NavLink></li>
           <li><NavLink to="/about" activeStyle={{ color: 'orangered' }}>About us</NavLink></li>
-          <li><NavLink to="/contact" activeStyle={{ color: 'orangered' }}>Contact</NavLink></li>
         </ul>
       </nav>
     )
@@ -76,7 +74,6 @@ const App = () => (
         <Route exact path="/products" component={Products}/>
         <Route exact path="/plan" component={Plan}/>
         <Route exact path="/about" component={About}/>
-        <Route exact path="/contact" component={Contact}/>
       </main>
       <Footer />
     </div>
